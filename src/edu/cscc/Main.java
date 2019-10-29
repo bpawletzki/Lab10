@@ -6,7 +6,7 @@ import java.util.Comparator;
 /**
  * Lab10 sort the students
  * @author Brian Pawletzki
- * @version 20191029T1941
+ * @version 20191029T1954
  */
 public class Main {
 
