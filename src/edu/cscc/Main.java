@@ -3,6 +3,11 @@ package edu.cscc;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * Lab10 sort the students
+ * @author Brian Pawletzki
+ * @version 20191029T1941
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -31,6 +36,7 @@ public class Main {
             public int compare(Student s1, Student s2) {
                 int zipcode1 = s1.getZipcode();
                 int zipcode2 = s2.getZipcode();
+                //Cast as Integer to make the compareTo work
                 return ((Integer)zipcode1).compareTo((Integer) zipcode2);
             }
         });
@@ -41,6 +47,7 @@ public class Main {
             public int compare(Student s1, Student s2) {
                 Double gpa1 = s1.getGpa();
                 Double gpa2 = s2.getGpa();
+                // reverse the sort by comparing gpa2 to gpa1
                 return gpa2.compareTo(gpa1);
             }
         });
